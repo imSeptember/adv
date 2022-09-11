@@ -39,6 +39,13 @@
     <link rel="manifest" href="/IMG/site.webmanifest" />
   </head>
   <body>
+    <div class="preloader">
+      <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path>
+      </svg>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand p-0" href="/">
@@ -64,7 +71,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="poslygu.html">ПОСЛУГИ</a>
+              <a class="nav-link" href="poslygu.html">ПРАКТИКИ</a>
             </li>
           </ul>
         </div>
@@ -665,30 +672,33 @@
     <div class="footer__addr">
       <h1 class="footer__logo">Адвокат Каленський Владислав</h1>
   
-      <h2>Contact</h2>
+      <h2>Адреса офісу та контактний номер адвоката:</h2>
   
       <address>
-        вул. Будівельників, 38/14, Київ, Україна<br>
-  
-        <a class="footer__btn" href="mailto:kalensky_advokat@icloud.com">Надіслати лист</a>
+        <a class="footer__btn"href="https://goo.gl/maps/3XuUgS6rv9FezaHS9">вул. Будівельників, 38/14, Київ, Україна</a>
+        <a class="footer__btn" href="tel:+380508538483">+38 (050) 853 84 83</a>
       </address>
     </div>
   
     <ul class="footer__nav">
       <li class="nav__item">
-        <h2 class="nav__title">Rewards</h2>
+        <h2 class="nav__title">Соціальні сторінки адвоката</h2>
   
         <ul class="nav__ul">
           <li>
-            <a href="#">Join Now</a>
+            <a href="https://www.facebook.com/advkalenskiy/">Facebook</a>
           </li>
   
           <li>
-            <a href="#">Learn More</a>
+            <a href="https://www.instagram.com/kalenskiy_advocate/">Instagram</a>
           </li>
   
           <li>
-            <a href="#">Manage Account</a>
+            <a href="https://t.me/adv_kalenskiy">Telegram</a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/adv_kalenskiy">Twitter</a>
           </li>
         </ul>
       </li>
@@ -724,15 +734,15 @@
       </li>
   
       <li class="nav__item">
-        <h2 class="nav__title">Support</h2>
+        <h2 class="nav__title">Підтримка</h2>
   
         <ul class="nav__ul">
           <li>
-            <a href="#">FAQ</a>
+            <a href="mailto:kalensky_advokat@icloud.com">Надіслати лист</a>
           </li>
   
           <li>
-            <a href="#">Help Desk</a>
+            <a href="Зразковий примірник договору.pdf">Завантажити примірник договору</a>
           </li>
   
           <li>
@@ -748,7 +758,15 @@
     </div>
   </footer>
   
-  
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 10);
+    }
+  </script>
   </body>
   </html>
 </html>
