@@ -17,7 +17,8 @@ a {
 }
 
 .card-text {
-  height: 290px;
+  float: none;
+  overflow: auto;
 }
 
 .card:hover {
