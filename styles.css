@@ -11,13 +11,17 @@
 }
 
 i > a {
-  text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-i {
-  text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
+/* i {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+} */
+
+.btn-primary {
+  background: radial-gradient(#3fbafe, #3fbafe);
 }
 
 .card {
@@ -84,17 +88,6 @@ html {
   font-size: 100%;
 }
 
-body {
-  font-family: acumin-pro, system-ui, sans-serif;
-  margin: 0;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  font-size: 14px;
-  background-color: #f4f4f4;
-  align-items: start;
-  min-height: 100vh;
-}
-
 .footer {
   display: flex;
   flex-flow: row wrap;
@@ -145,7 +138,7 @@ body {
   color: #999;
   line-height: 0;
   margin: 0.6em 0;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   padding: 0 1.3em;
 }
 
@@ -378,7 +371,7 @@ SERVICES PAGE SERVICES PAGE SERVICES PAGE SERVICES PAGE SERVICES PAGE SERVICES P
 }
 
 .card-2 {
-  background: radial-gradient(#fbc1cc, #fa99b2);
+  background: radial-gradient(#1fe4f5, #3fbafe);
 }
 
 .card-3 {
@@ -386,11 +379,11 @@ SERVICES PAGE SERVICES PAGE SERVICES PAGE SERVICES PAGE SERVICES PAGE SERVICES P
 }
 
 .card-4 {
-  background: radial-gradient(#60efbc, #58d5c9);
+  background: radial-gradient(#76b2fe, #b69efe);
 }
 
 .card-5 {
-  background: radial-gradient(#f588d8, #c0a3e5);
+  background: radial-gradient(#76b2fe, #b69efe);
 }
 
 /* RESPONSIVE */
