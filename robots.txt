@@ -1,0 +1,8 @@
+# *
+User-agent: *
+
+# Host
+Host: https://advkalenskiy.netlify.app/
+
+# Sitemaps
+Sitemap: https://advkalenskiy.netlify.app/sitemap.xml
