@@ -1,0 +1,6 @@
+[[redirects]]
+  from  = "/*"
+  host  = "advkalenskiy.netlify.app"
+  to    = "https://kalenskiy.com.ua/komanda/kalenskiy-vladislav"
+  status = 301
+  force  = true
